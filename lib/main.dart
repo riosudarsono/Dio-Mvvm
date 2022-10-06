@@ -3,6 +3,7 @@ import 'package:dio_mvvm/ui/main_page.dart';
 import 'package:dio_mvvm/ui/profile/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:dio_mvvm/di/injector.dart';
 // import 'package:easy_localization/easy_localization.dart';
 // import 'package:dio_mvvm/app/language_manager.dart';
 // import 'app/constants.dart';
@@ -10,6 +11,7 @@ import 'package:go_router/go_router.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await initializeDependencies();
   // await EasyLocalization.ensureInitialized();
   // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
   //     .then((_) {
