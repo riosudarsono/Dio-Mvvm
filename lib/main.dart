@@ -1,3 +1,4 @@
+import 'package:dio_mvvm/ui/auth/login_page.dart';
 import 'package:dio_mvvm/ui/detail/detail_page.dart';
 import 'package:dio_mvvm/ui/main_page.dart';
 import 'package:dio_mvvm/ui/profile/profile_page.dart';
@@ -60,6 +61,13 @@ class MyApp extends StatelessWidget {
         name: DetailPage.route,
         builder: (BuildContext context, GoRouterState state) {
           return const DetailPage();
+        },
+      ),
+      GoRoute(
+        path: LoginPage.route,
+        name: LoginPage.route,
+        builder: (BuildContext context, GoRouterState state) {
+          return const LoginPage();
         },
       ),
     ],
